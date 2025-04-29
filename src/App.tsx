@@ -13,7 +13,7 @@ const projects = [
     title: "Plateforme E-commerce",
     description: "Solution complète avec gestion de produits, panier et paiement sécurisé",
     image: "https://github.com/Oscarleo11/navishka-Produits/blob/main/Img%20Portfolio1.png?raw=true",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["React", "Node.js", "Firebase"],
     demoLink: "https://navishka.vercel.app",
     // codeLink: "#"
   },
@@ -46,20 +46,20 @@ const projects = [
 const skills = [
   {
     category: "Frontend",
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Jest"]
+    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Html", "CSS"]
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "MongoDB", "PostgreSQL", "GraphQL", "REST"]
-  },
-  {
-    category: "DevOps",
-    items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform", "Nginx"]
-  },
-  {
-    category: "Design",
-    items: ["Figma", "Adobe XD", "UI/UX", "Prototypage", "Responsive Design"]
+    items: ["Laravel", "Express", "Supabase", "GraphQL", "REST"]
   }
+  // {
+  //   category: "DevOps",
+  //   items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform", "Nginx"]
+  // },
+  // {
+  //   category: "Design",
+  //   items: ["Figma", "Adobe XD", "UI/UX", "Prototypage", "Responsive Design"]
+  // }
 ];
 
 function App() {
@@ -222,16 +222,14 @@ function App() {
             <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
 
-          <motion.div
-            className="mb-12 flex justify-center"
-            {...fadeIn}
-          >
+          <motion.div className="mb-12 flex justify-center" {...fadeIn}>
             <a
-              href="#"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors font-medium shadow-lg hover:shadow-blue-500/20"
+              href="/OSCAR_CV.pdf"  // Chemin relatif vers votre fichier dans public/
+              download="CV_Oscar_Folitse_Developpeur.pdf" // Nom du fichier proposé au téléchargement
+              className="inline-flex items-center gap-3 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors font-medium shadow-lg hover:shadow-blue-500/20"
             >
               <Download className="w-5 h-5" />
-              Télécharger mon CV complet
+              Télécharger mon CV
             </a>
           </motion.div>
 
