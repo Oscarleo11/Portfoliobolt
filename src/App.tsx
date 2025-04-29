@@ -74,7 +74,7 @@ function App() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-tight">
-            Jean Dupont
+            Oscar FOLITSE
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 font-medium">
             Développeur Full Stack & Consultant Technique
