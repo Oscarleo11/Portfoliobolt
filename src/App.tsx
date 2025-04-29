@@ -408,7 +408,7 @@ function App() {
           </motion.p>
           <motion.div className="space-y-4 max-w-md mx-auto" {...fadeIn}>
             <motion.a
-              href="mailto:contact@jeandupont.com"
+              href="mailto:oscarfolitse@gmail.com"
               className="inline-flex items-center justify-center gap-3 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors font-medium w-full"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
