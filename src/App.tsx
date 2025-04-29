@@ -12,10 +12,10 @@ const projects = [
   {
     title: "Plateforme E-commerce",
     description: "Solution complète avec gestion de produits, panier et paiement sécurisé",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    image: "https://github.com/Oscarleo11/navishka-Produits/blob/main/Img%20Portfolio1.png?raw=true",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    demoLink: "#",
-    codeLink: "#"
+    demoLink: "https://navishka.vercel.app",
+    // codeLink: "#"
   },
   {
     title: "Application de Gestion",
@@ -67,7 +67,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white font-sans">
       {/* Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="w-full max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -77,14 +77,14 @@ function App() {
             Oscar FOLITSE
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 font-medium">
-            Développeur Full Stack & Consultant Technique
+            Développeur Web Full Stack chez GLIO & Freelance
           </h2>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             Je conçois et développe des applications web performantes avec une attention particulière pour l'expérience utilisateur.
           </p>
           <div className="flex gap-4 justify-center mb-12">
-            <motion.a 
-              href="https://github.com/votreprofil" 
+            <motion.a
+              href="https://github.com/votreprofil"
               target="_blank"
               className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -92,8 +92,8 @@ function App() {
             >
               <Github className="w-6 h-6" />
             </motion.a>
-            <motion.a 
-              href="https://linkedin.com/in/votreprofil" 
+            <motion.a
+              href="https://linkedin.com/in/votreprofil"
               target="_blank"
               className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -101,8 +101,8 @@ function App() {
             >
               <Linkedin className="w-6 h-6" />
             </motion.a>
-            <motion.a 
-              href="mailto:contact@jeandupont.com" 
+            <motion.a
+              href="mailto:contact@jeandupont.com"
               className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
@@ -110,7 +110,7 @@ function App() {
               <Mail className="w-6 h-6" />
             </motion.a>
           </div>
-          <motion.a 
+          <motion.a
             href="#about"
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
             animate={{ y: [0, 10, 0] }}
@@ -124,7 +124,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
@@ -149,15 +149,15 @@ function App() {
             <motion.div {...fadeIn} className="space-y-6">
               <h3 className="text-2xl font-semibold text-white">Qui suis-je ?</h3>
               <p className="text-gray-300 leading-relaxed">
-                Développeur full stack passionné avec plus de 5 ans d'expérience dans la création d'applications web modernes. Je combine expertise technique et sens du design pour offrir des solutions à la fois performantes et esthétiques.
+                Développeur full stack passionné avec plus de 2 ans d'expérience dans la création d'applications web modernes. Je combine expertise technique et sens du design pour offrir des solutions à la fois performantes et esthétiques.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Spécialisé dans les écosystèmes JavaScript et cloud, j'accompagne mes clients de la conception à la mise en production, en garantissant qualité, maintenabilité et évolutivité.
+                Spécialisé dans les écosystèmes Php Laravel JavaScript React.js, j'accompagne mes clients de la conception à la mise en production, en garantissant qualité, maintenabilité et évolutivité.
               </p>
               <div className="flex flex-wrap gap-3">
                 {['React', 'TypeScript', 'Node.js', 'AWS', 'Docker', 'GraphQL', 'Next.js', 'Tailwind CSS'].map((tech) => (
-                  <motion.span 
-                    key={tech} 
+                  <motion.span
+                    key={tech}
                     className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium"
                     whileHover={{ scale: 1.05 }}
                   >
@@ -173,7 +173,7 @@ function App() {
       {/* Skills Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/40">
         <div className="max-w-5xl mx-auto">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
@@ -183,7 +183,7 @@ function App() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skillGroup, index) => (
-              <motion.div 
+              <motion.div
                 key={skillGroup.category}
                 className="bg-gray-800/60 rounded-xl p-6 backdrop-blur-sm border border-gray-700"
                 initial={{ opacity: 0, y: 20 }}
@@ -196,8 +196,8 @@ function App() {
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {skillGroup.items.map((skill) => (
-                    <span 
-                      key={skill} 
+                    <span
+                      key={skill}
                       className="px-3 py-1.5 bg-gray-700/70 rounded-lg text-sm font-medium flex items-center gap-1.5"
                     >
                       {skill}
@@ -213,7 +213,7 @@ function App() {
       {/* CV Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
@@ -222,7 +222,7 @@ function App() {
             <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="mb-12 flex justify-center"
             {...fadeIn}
           >
@@ -236,8 +236,9 @@ function App() {
           </motion.div>
 
           {/* Experience */}
+          {/* CV Section - Expérience Professionnelle */}
           <div className="mb-16">
-            <motion.h3 
+            <motion.h3
               className="text-2xl font-semibold mb-8 flex items-center gap-3 text-white"
               {...fadeIn}
             >
@@ -245,36 +246,41 @@ function App() {
               <span>Expérience Professionnelle</span>
             </motion.h3>
             <div className="space-y-8">
-              <motion.div 
+              {/* Expérience chez GLIO */}
+              <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
                 <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
                 <div className="mb-2">
-                  <h4 className="text-xl font-semibold">Lead Developer</h4>
-                  <p className="text-blue-400 font-medium">TechVision • 2022 - Présent</p>
+                  <h4 className="text-xl font-semibold">Développeur Web Full Stack</h4>
+                  <p className="text-blue-400 font-medium">GLIO • 2022 - Présent</p>
                 </div>
                 <ul className="text-gray-300 space-y-2 list-disc list-inside">
-                  <li>Direction d'une équipe de 5 développeurs full stack</li>
-                  <li>Architecture et développement d'une plateforme SaaS</li>
-                  <li>Optimisation des performances (réduction de 40% du temps de chargement)</li>
-                  <li>Mise en place de bonnes pratiques CI/CD</li>
+                  <li>Développement et maintenance de l'application web principale de l'entreprise</li>
+                  <li>Conception et implémentation de nouvelles fonctionnalités frontend et backend</li>
+                  <li>Optimisation des performances et résolution des problèmes techniques</li>
+                  <li>Collaboration avec les équipes métier pour comprendre les besoins utilisateurs</li>
+                  <li>Mise en production et suivi des déploiements</li>
                 </ul>
               </motion.div>
-              <motion.div 
+
+              {/* Expérience Freelance */}
+              <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
                 <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
                 <div className="mb-2">
-                  <h4 className="text-xl font-semibold">Développeur Full Stack</h4>
-                  <p className="text-blue-400 font-medium">Innovatech • 2020 - 2022</p>
+                  <h4 className="text-xl font-semibold">Développeur Freelance</h4>
+                  <p className="text-blue-400 font-medium">Auto-entrepreneur • 2020 - Présent</p>
                 </div>
                 <ul className="text-gray-300 space-y-2 list-disc list-inside">
-                  <li>Développement d'applications web et mobiles</li>
-                  <li>Refonte de l'architecture backend (migration vers microservices)</li>
-                  <li>Formation des nouveaux développeurs</li>
-                  <li>Collaboration avec l'équipe design sur l'UX</li>
+                  <li>Réalisation de sites vitrines et applications web sur mesure pour divers clients</li>
+                  <li>Développement d'une plateforme e-commerce pour un client du secteur de la mode</li>
+                  <li>Création d'un outil de gestion de contenu pour une agence immobilière</li>
+                  <li>Consultation technique et accompagnement dans les choix technologiques</li>
+                  <li>Gestion complète du projet (spécifications, développement, déploiement)</li>
                 </ul>
               </motion.div>
             </div>
@@ -282,7 +288,7 @@ function App() {
 
           {/* Education */}
           <div>
-            <motion.h3 
+            <motion.h3
               className="text-2xl font-semibold mb-8 flex items-center gap-3 text-white"
               {...fadeIn}
             >
@@ -290,7 +296,7 @@ function App() {
               <span>Formation</span>
             </motion.h3>
             <div className="space-y-8">
-              <motion.div 
+              <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
@@ -305,7 +311,7 @@ function App() {
                   <li>Projet de fin d'études noté 18/20</li>
                 </ul>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
@@ -328,7 +334,7 @@ function App() {
       {/* Projects Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-5xl mx-auto">
-          <motion.div 
+          <motion.div
             className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
@@ -338,7 +344,7 @@ function App() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <motion.div 
+              <motion.div
                 key={project.title}
                 className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400/30 transition-all group"
                 initial={{ opacity: 0, y: 20 }}
@@ -358,8 +364,8 @@ function App() {
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-5">
                     {project.technologies.map((tech) => (
-                      <span 
-                        key={tech} 
+                      <span
+                        key={tech}
                         className="px-2.5 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-medium"
                       >
                         {tech}
@@ -367,15 +373,15 @@ function App() {
                     ))}
                   </div>
                   <div className="flex items-center gap-4">
-                    <a 
-                      href={project.demoLink} 
+                    <a
+                      href={project.demoLink}
                       className="text-blue-400 hover:text-blue-300 flex items-center gap-2 font-medium transition-colors"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Voir la démo
                     </a>
-                    <a 
-                      href={project.codeLink} 
+                    <a
+                      href={project.codeLink}
                       className="text-blue-400 hover:text-blue-300 flex items-center gap-2 font-medium transition-colors"
                     >
                       <Github className="w-4 h-4" />
@@ -392,7 +398,7 @@ function App() {
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center gap-3 mb-8"
             {...fadeIn}
           >
@@ -400,11 +406,12 @@ function App() {
             <h2 className="text-2xl sm:text-3xl font-bold text-white">Contact</h2>
             <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
           </motion.div>
-          <motion.p 
+          <motion.p
             className="text-gray-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed"
             {...fadeIn}
           >
-            Vous avez un projet ou souhaitez discuter d'une opportunité ? Je serais ravi d'échanger avec vous.
+            Actuellement développeur chez GLIO et disponible pour des missions freelance.
+            Discutons de votre projet ou d'opportunités de collaboration.
           </motion.p>
           <motion.div className="space-y-4 max-w-md mx-auto" {...fadeIn}>
             <motion.a
@@ -433,14 +440,14 @@ function App() {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-gray-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row justify-between items-center gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-400">
-              © {new Date().getFullYear()} Jean Dupont. Tous droits réservés.
+              © {new Date().getFullYear()} Oscar FOLITSE. Tous droits réservés.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
