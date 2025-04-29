@@ -10,32 +10,32 @@ const fadeIn = {
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Application complète de commerce électronique avec panier, paiement et gestion des commandes",
+    title: "Plateforme E-commerce",
+    description: "Solution complète avec gestion de produits, panier et paiement sécurisé",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "Dashboard Analytics",
-    description: "Tableau de bord en temps réel avec visualisation de données et rapports personnalisés",
+    title: "Application de Gestion",
+    description: "Outil de gestion de projets avec tableau de bord analytique",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-    technologies: ["React", "D3.js", "Firebase", "Material-UI"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "Social Media App",
-    description: "Application sociale avec messagerie en temps réel et partage de contenu",
+    title: "Réseau Social",
+    description: "Plateforme de partage avec fonctionnalités sociales avancées",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-    technologies: ["React Native", "GraphQL", "MongoDB", "WebSocket"],
+    technologies: ["React Native", "GraphQL", "Apollo", "AWS"],
     demoLink: "#",
     codeLink: "#"
   },
   {
-    title: "AI Content Generator",
-    description: "Outil de génération de contenu utilisant l'IA pour créer des textes et images",
+    title: "Outil IA",
+    description: "Générateur de contenu utilisant l'intelligence artificielle",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
     technologies: ["Python", "TensorFlow", "FastAPI", "React"],
     demoLink: "#",
@@ -46,25 +46,25 @@ const projects = [
 const skills = [
   {
     category: "Frontend",
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Testing Library"]
+    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Jest"]
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL", "REST API"]
+    items: ["Node.js", "Express", "MongoDB", "PostgreSQL", "GraphQL", "REST"]
   },
   {
     category: "DevOps",
-    items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform", "Monitoring"]
+    items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform", "Nginx"]
   },
   {
-    category: "Outils",
-    items: ["Git", "VS Code", "Jira", "Figma", "Postman", "Jest"]
+    category: "Design",
+    items: ["Figma", "Adobe XD", "UI/UX", "Prototypage", "Responsive Design"]
   }
 ];
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white font-sans">
       {/* Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 lg:px-8">
         <motion.div 
@@ -73,77 +73,92 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-tight">
-            Développeur Full Stack
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-tight">
+            Jean Dupont
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 px-4">
-            Je crée des applications web modernes et performantes
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 font-medium">
+            Développeur Full Stack & Consultant Technique
+          </h2>
+          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Je conçois et développe des applications web performantes avec une attention particulière pour l'expérience utilisateur.
           </p>
-          <div className="flex gap-4 justify-center mb-8 sm:mb-12">
+          <div className="flex gap-4 justify-center mb-12">
             <motion.a 
-              href="#" 
-              className="p-2 hover:text-blue-400 transition-colors"
-              whileHover={{ scale: 1.1 }}
+              href="https://github.com/votreprofil" 
+              target="_blank"
+              className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+              whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Github className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Github className="w-6 h-6" />
             </motion.a>
             <motion.a 
-              href="#" 
-              className="p-2 hover:text-blue-400 transition-colors"
-              whileHover={{ scale: 1.1 }}
+              href="https://linkedin.com/in/votreprofil" 
+              target="_blank"
+              className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+              whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Linkedin className="w-6 h-6" />
             </motion.a>
             <motion.a 
-              href="#" 
-              className="p-2 hover:text-blue-400 transition-colors"
-              whileHover={{ scale: 1.1 }}
+              href="mailto:contact@jeandupont.com" 
+              className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+              whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Mail className="w-6 h-6" />
             </motion.a>
           </div>
           <motion.a 
             href="#about"
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
           >
-            <ChevronDown className="w-8 h-8 sm:w-10 sm:h-10" />
+            <ChevronDown className="w-8 h-8 text-gray-400 hover:text-white transition-colors" />
           </motion.a>
         </motion.div>
       </header>
 
       {/* About Section */}
-      <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
           <motion.div 
-            className="flex items-center gap-2 mb-8 sm:mb-12"
+            className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
-            <User className="text-blue-400 w-6 h-6 sm:w-8 sm:h-8" />
-            <h2 className="text-2xl sm:text-3xl font-bold">À Propos</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">À Propos</h2>
+            <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <motion.img
-              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-              alt="Developer workspace"
-              className="rounded-lg shadow-xl w-full"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-            />
-            <motion.div {...fadeIn} className="space-y-4">
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-                Passionné par le développement web depuis plus de 5 ans, je crée des solutions digitales sur mesure pour mes clients. Spécialisé en React, Node.js et architecture cloud, je transforme des idées en applications performantes et évolutives.
+            >
+              <img
+                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Jean Dupont"
+                className="rounded-xl shadow-2xl w-full max-w-md mx-auto border-2 border-gray-700"
+              />
+              <div className="absolute -inset-4 border-2 border-blue-400/30 rounded-xl -z-10"></div>
+            </motion.div>
+            <motion.div {...fadeIn} className="space-y-6">
+              <h3 className="text-2xl font-semibold text-white">Qui suis-je ?</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Développeur full stack passionné avec plus de 5 ans d'expérience dans la création d'applications web modernes. Je combine expertise technique et sens du design pour offrir des solutions à la fois performantes et esthétiques.
               </p>
-              <div className="flex flex-wrap gap-2 sm:gap-3">
-                {['React', 'TypeScript', 'Node.js', 'AWS', 'Docker', 'GraphQL'].map((tech) => (
+              <p className="text-gray-300 leading-relaxed">
+                Spécialisé dans les écosystèmes JavaScript et cloud, j'accompagne mes clients de la conception à la mise en production, en garantissant qualité, maintenabilité et évolutivité.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {['React', 'TypeScript', 'Node.js', 'AWS', 'Docker', 'GraphQL', 'Next.js', 'Tailwind CSS'].map((tech) => (
                   <motion.span 
                     key={tech} 
-                    className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm"
+                    className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium"
                     whileHover={{ scale: 1.05 }}
                   >
                     {tech}
@@ -156,28 +171,35 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/40">
+        <div className="max-w-5xl mx-auto">
           <motion.div 
-            className="flex items-center gap-2 mb-8 sm:mb-12"
+            className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
-            <Award className="text-blue-400 w-6 h-6 sm:w-8 sm:h-8" />
-            <h2 className="text-2xl sm:text-3xl font-bold">Compétences</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">Compétences</h2>
+            <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
-          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skillGroup, index) => (
               <motion.div 
                 key={skillGroup.category}
-                className="bg-gray-800/50 rounded-lg p-4 sm:p-6"
+                className="bg-gray-800/60 rounded-xl p-6 backdrop-blur-sm border border-gray-700"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-blue-400">{skillGroup.category}</h3>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-xl font-semibold mb-4 text-blue-400 flex items-center gap-2">
+                  <Star className="w-5 h-5" />
+                  {skillGroup.category}
+                </h3>
+                <div className="flex flex-wrap gap-3">
                   {skillGroup.items.map((skill) => (
-                    <span key={skill} className="px-2 sm:px-3 py-1 bg-gray-700/50 rounded-full text-xs sm:text-sm">
+                    <span 
+                      key={skill} 
+                      className="px-3 py-1.5 bg-gray-700/70 rounded-lg text-sm font-medium flex items-center gap-1.5"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -189,64 +211,71 @@ function App() {
       </section>
 
       {/* CV Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
           <motion.div 
-            className="flex items-center gap-2 mb-8 sm:mb-12"
+            className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
-            <GraduationCap className="text-blue-400 w-6 h-6 sm:w-8 sm:h-8" />
-            <h2 className="text-2xl sm:text-3xl font-bold">Curriculum Vitae</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">Parcours</h2>
+            <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
 
           <motion.div 
-            className="mb-8 flex justify-end"
+            className="mb-12 flex justify-center"
             {...fadeIn}
           >
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 px-3 sm:px-4 py-2 rounded-lg hover:bg-blue-500/20 transition-colors text-sm sm:text-base"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors font-medium shadow-lg hover:shadow-blue-500/20"
             >
-              <Download className="w-4 h-4 sm:w-5 sm:h-5" />
-              Télécharger CV
+              <Download className="w-5 h-5" />
+              Télécharger mon CV complet
             </a>
           </motion.div>
 
           {/* Experience */}
-          <div className="mb-12">
+          <div className="mb-16">
             <motion.h3 
-              className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2"
+              className="text-2xl font-semibold mb-8 flex items-center gap-3 text-white"
               {...fadeIn}
             >
-              <Building2 className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6" />
-              Expérience Professionnelle
+              <Building2 className="text-blue-400 w-6 h-6" />
+              <span>Expérience Professionnelle</span>
             </motion.h3>
             <div className="space-y-8">
               <motion.div 
-                className="relative pl-6 sm:pl-8 border-l-2 border-blue-400/20"
+                className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
-                <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-blue-400 rounded-full -left-[7px] sm:-left-[9px] top-0"></div>
-                <div className="mb-1">
-                  <h4 className="text-lg sm:text-xl font-semibold">Lead Developer</h4>
-                  <p className="text-blue-400 text-sm sm:text-base">Entreprise Tech • 2022 - Présent</p>
+                <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
+                <div className="mb-2">
+                  <h4 className="text-xl font-semibold">Lead Developer</h4>
+                  <p className="text-blue-400 font-medium">TechVision • 2022 - Présent</p>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  Direction technique d'une équipe de 5 développeurs. Mise en place d'architecture microservices et développement d'applications React/Node.js à grande échelle.
-                </p>
+                <ul className="text-gray-300 space-y-2 list-disc list-inside">
+                  <li>Direction d'une équipe de 5 développeurs full stack</li>
+                  <li>Architecture et développement d'une plateforme SaaS</li>
+                  <li>Optimisation des performances (réduction de 40% du temps de chargement)</li>
+                  <li>Mise en place de bonnes pratiques CI/CD</li>
+                </ul>
               </motion.div>
               <motion.div 
-                className="relative pl-6 sm:pl-8 border-l-2 border-blue-400/20"
+                className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
-                <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-blue-400 rounded-full -left-[7px] sm:-left-[9px] top-0"></div>
-                <div className="mb-1">
-                  <h4 className="text-lg sm:text-xl font-semibold">Développeur Full Stack</h4>
-                  <p className="text-blue-400 text-sm sm:text-base">Startup Innovante • 2020 - 2022</p>
+                <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
+                <div className="mb-2">
+                  <h4 className="text-xl font-semibold">Développeur Full Stack</h4>
+                  <p className="text-blue-400 font-medium">Innovatech • 2020 - 2022</p>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  Développement full stack d'une application SaaS. Technologies : React, Node.js, PostgreSQL, AWS.
-                </p>
+                <ul className="text-gray-300 space-y-2 list-disc list-inside">
+                  <li>Développement d'applications web et mobiles</li>
+                  <li>Refonte de l'architecture backend (migration vers microservices)</li>
+                  <li>Formation des nouveaux développeurs</li>
+                  <li>Collaboration avec l'équipe design sur l'UX</li>
+                </ul>
               </motion.div>
             </div>
           </div>
@@ -254,38 +283,42 @@ function App() {
           {/* Education */}
           <div>
             <motion.h3 
-              className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2"
+              className="text-2xl font-semibold mb-8 flex items-center gap-3 text-white"
               {...fadeIn}
             >
-              <GraduationCap className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6" />
-              Formation
+              <GraduationCap className="text-blue-400 w-6 h-6" />
+              <span>Formation</span>
             </motion.h3>
             <div className="space-y-8">
               <motion.div 
-                className="relative pl-6 sm:pl-8 border-l-2 border-blue-400/20"
+                className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
-                <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-blue-400 rounded-full -left-[7px] sm:-left-[9px] top-0"></div>
-                <div className="mb-1">
-                  <h4 className="text-lg sm:text-xl font-semibold">Master en Informatique</h4>
-                  <p className="text-blue-400 text-sm sm:text-base">École d'Ingénieur • 2018 - 2020</p>
+                <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
+                <div className="mb-2">
+                  <h4 className="text-xl font-semibold">Master en Ingénierie Logicielle</h4>
+                  <p className="text-blue-400 font-medium">École Polytechnique • 2018 - 2020</p>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  Spécialisation en développement web et architecture logicielle.
-                </p>
+                <ul className="text-gray-300 space-y-2 list-disc list-inside">
+                  <li>Spécialisation en architecture des systèmes d'information</li>
+                  <li>Mémoire sur l'optimisation des applications React</li>
+                  <li>Projet de fin d'études noté 18/20</li>
+                </ul>
               </motion.div>
               <motion.div 
-                className="relative pl-6 sm:pl-8 border-l-2 border-blue-400/20"
+                className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
-                <div className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-blue-400 rounded-full -left-[7px] sm:-left-[9px] top-0"></div>
-                <div className="mb-1">
-                  <h4 className="text-lg sm:text-xl font-semibold">Licence Informatique</h4>
-                  <p className="text-blue-400 text-sm sm:text-base">Université • 2015 - 2018</p>
+                <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
+                <div className="mb-2">
+                  <h4 className="text-xl font-semibold">Licence Informatique</h4>
+                  <p className="text-blue-400 font-medium">Université Paris-Saclay • 2015 - 2018</p>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  Formation généraliste en informatique avec focus sur la programmation.
-                </p>
+                <ul className="text-gray-300 space-y-2 list-disc list-inside">
+                  <li>Parcours développement web et bases de données</li>
+                  <li>Projets en équipe sur des applications full stack</li>
+                  <li>Option entrepreneuriat technologique</li>
+                </ul>
               </motion.div>
             </div>
           </div>
@@ -293,47 +326,60 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div className="max-w-5xl mx-auto">
           <motion.div 
-            className="flex items-center gap-2 mb-8 sm:mb-12"
+            className="flex items-center gap-3 mb-12"
             {...fadeIn}
           >
-            <Code2 className="text-blue-400 w-6 h-6 sm:w-8 sm:h-8" />
-            <h2 className="text-2xl sm:text-3xl font-bold">Projets</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">Projets Réalisés</h2>
+            <div className="flex-1 h-1 bg-gray-700 rounded-full"></div>
           </motion.div>
-          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div 
                 key={project.title}
-                className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
+                className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400/30 transition-all group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-40 sm:h-48 object-cover"
-                />
-                <div className="p-4 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-sm sm:text-base mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <div className="relative overflow-hidden h-48">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
+                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-5">
                     {project.technologies.map((tech) => (
-                      <span key={tech} className="px-2 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">
+                      <span 
+                        key={tech} 
+                        className="px-2.5 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-medium"
+                      >
                         {tech}
                       </span>
                     ))}
                   </div>
                   <div className="flex items-center gap-4">
-                    <a href={project.demoLink} className="text-blue-400 hover:text-blue-300 flex items-center gap-1 text-sm sm:text-base">
+                    <a 
+                      href={project.demoLink} 
+                      className="text-blue-400 hover:text-blue-300 flex items-center gap-2 font-medium transition-colors"
+                    >
                       <ExternalLink className="w-4 h-4" />
-                      Demo
+                      Voir la démo
                     </a>
-                    <a href={project.codeLink} className="text-blue-400 hover:text-blue-300 flex items-center gap-1 text-sm sm:text-base">
+                    <a 
+                      href={project.codeLink} 
+                      className="text-blue-400 hover:text-blue-300 flex items-center gap-2 font-medium transition-colors"
+                    >
                       <Github className="w-4 h-4" />
-                      Code
+                      Code source
                     </a>
                   </div>
                 </div>
@@ -344,36 +390,68 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.div 
-            className="flex items-center gap-2 justify-center mb-6 sm:mb-8"
+            className="flex items-center justify-center gap-3 mb-8"
             {...fadeIn}
           >
-            <Briefcase className="text-blue-400 w-6 h-6 sm:w-8 sm:h-8" />
-            <h2 className="text-2xl sm:text-3xl font-bold">Travaillons Ensemble</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">Contact</h2>
+            <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
           </motion.div>
           <motion.p 
-            className="text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base"
+            className="text-gray-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed"
             {...fadeIn}
           >
-            Je suis actuellement disponible pour des projets freelance. Si vous avez un projet en tête, n'hésitez pas à me contacter.
+            Vous avez un projet ou souhaitez discuter d'une opportunité ? Je serais ravi d'échanger avec vous.
           </motion.p>
-          <motion.a
-            href="mailto:contact@example.com"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-colors text-sm sm:text-base"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-            Me Contacter
-          </motion.a>
+          <motion.div className="space-y-4 max-w-md mx-auto" {...fadeIn}>
+            <motion.a
+              href="mailto:contact@jeandupont.com"
+              className="inline-flex items-center justify-center gap-3 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors font-medium w-full"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Mail className="w-5 h-5" />
+              Envoyer un email
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/votreprofil"
+              target="_blank"
+              className="inline-flex items-center justify-center gap-3 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors font-medium w-full"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Linkedin className="w-5 h-5" />
+              Me contacter sur LinkedIn
+            </motion.a>
+          </motion.div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-6 sm:py-8 text-center text-gray-400 border-t border-gray-800 text-sm sm:text-base">
-        <p>© 2024 - Tous droits réservés</p>
+      <footer className="py-8 text-center border-t border-gray-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="flex flex-col sm:flex-row justify-between items-center gap-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-gray-400">
+              © {new Date().getFullYear()} Jean Dupont. Tous droits réservés.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                Mentions légales
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                Politique de confidentialité
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </footer>
     </div>
   );
