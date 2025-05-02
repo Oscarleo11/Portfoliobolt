@@ -77,7 +77,7 @@ function App() {
             Oscar FOLITSE
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 font-medium">
-            Développeur Web Full Stack chez GLIO & Freelance
+            Développeur Web Full Stack
           </h2>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             Je conçois et développe des applications web performantes avec une attention particulière pour l'expérience utilisateur.
@@ -141,7 +141,7 @@ function App() {
             >
               <img
                 src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                alt="Jean Dupont"
+                alt="Oscar FOLITSE"
                 className="rounded-xl shadow-2xl w-full max-w-md mx-auto border-2 border-gray-700"
               />
               <div className="absolute -inset-4 border-2 border-blue-400/30 rounded-xl -z-10"></div>
@@ -252,7 +252,7 @@ function App() {
                 <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
                 <div className="mb-2">
                   <h4 className="text-xl font-semibold">Développeur Web Full Stack</h4>
-                  <p className="text-blue-400 font-medium">GLIO • 2022 - Présent</p>
+                  <p className="text-blue-400 font-medium">GLIO • 2023 - Présent</p>
                 </div>
                 <ul className="text-gray-300 space-y-2 list-disc list-inside">
                   <li>Développement et maintenance de l'application web principale de l'entreprise</li>
@@ -271,13 +271,13 @@ function App() {
                 <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
                 <div className="mb-2">
                   <h4 className="text-xl font-semibold">Développeur Freelance</h4>
-                  <p className="text-blue-400 font-medium">Auto-entrepreneur • 2020 - Présent</p>
+                  <p className="text-blue-400 font-medium">Auto-entrepreneur • 2023 - Présent</p>
                 </div>
                 <ul className="text-gray-300 space-y-2 list-disc list-inside">
                   <li>Réalisation de sites vitrines et applications web sur mesure pour divers clients</li>
                   <li>Développement d'une plateforme e-commerce pour un client du secteur de la mode</li>
-                  <li>Création d'un outil de gestion de contenu pour une agence immobilière</li>
-                  <li>Consultation technique et accompagnement dans les choix technologiques</li>
+                  {/* <li>Création d'un outil de gestion de contenu pour une agence immobilière</li> */}
+                  {/* <li>Consultation technique et accompagnement dans les choix technologiques</li> */}
                   <li>Gestion complète du projet (spécifications, développement, déploiement)</li>
                 </ul>
               </motion.div>
@@ -294,7 +294,7 @@ function App() {
               <span>Formation</span>
             </motion.h3>
             <div className="space-y-8">
-              <motion.div
+              {/* <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
@@ -308,15 +308,15 @@ function App() {
                   <li>Mémoire sur l'optimisation des applications React</li>
                   <li>Projet de fin d'études noté 18/20</li>
                 </ul>
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className="relative pl-8 border-l-2 border-blue-400/30 group"
                 {...fadeIn}
               >
                 <div className="absolute w-4 h-4 bg-blue-400 rounded-full -left-2 top-0 group-hover:scale-125 transition-transform"></div>
                 <div className="mb-2">
-                  <h4 className="text-xl font-semibold">Licence Informatique</h4>
-                  <p className="text-blue-400 font-medium">Université Paris-Saclay • 2015 - 2018</p>
+                  <h4 className="text-xl font-semibold">Licence Informatique degestion</h4>
+                  <p className="text-blue-400 font-medium">Université Cerco • 2022 - 2025</p>
                 </div>
                 <ul className="text-gray-300 space-y-2 list-disc list-inside">
                   <li>Parcours développement web et bases de données</li>
